@@ -5,9 +5,11 @@ import PrimeVue from 'primevue/config';
 import Material from '@primeuix/themes/material';
 import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'
+import i18n from "./i18n.js";
 import {Avatar, Button, Card, Drawer, Menu, Menubar, SelectButton, Toolbar, Tooltip} from "primevue";
-createApp(App).
-use(PrimeVue, {ripple: true, theme: {preset: Material}})
+createApp(App)
+    .use(i18n)
+    .use(PrimeVue, {ripple: true, theme: {preset: Material}})
     .component('pv-button', Button)
 .component('pv-select-button', SelectButton)
 .component('pv-Avatar', Avatar )
